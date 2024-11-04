@@ -1,3 +1,4 @@
+/* CSS reset*/
 * {
   padding: 0;
   margin: 0;
@@ -8,10 +9,90 @@
 
 html, body {
   height: 100%;
+  background-color: var(--background-color);
+  line-height: 1.5;
+  color: var(--text-color);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--spacing-small);
+  width: 100%;
+}
+
+ul {
   list-style-type: none;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+  
+}
+
+/* CSS variables */
+:root {
+  --background-color: #F7F9E3;
+  --text-color: #000000;
+
+  --h1-size: 2rem;
+  --h2-size: 1.5rem;
+  --h3-size: 1.25rem;
+  --p-size: 1rem;
+
+  --spacing-small: 1rem;
+  --spacing-medium: 2rem;
+  --spacing-large: 3rem;
+}
+
+h1 {
+  font-size: var(--h1-size);
+}
+
+h2 {
+  font-size: var(--h2-size);
+}
+
+h3 {
+  font-size: var(--h3-size);
+}
+
+p {
+  font-size: var(--p-size);
+}
+
+h1, h2, h3, p {
+  margin-bottom: var(--spacing-small);
+}
+
+@media (max-width: 600px) {
+  :root {
+    --h1-size: 1.5rem;
+    --h2-size: 1.25rem;
+    --h3-size: 1rem;
+    --p-size: 0.75rem;
+
+    --spacing-small: 0.5rem;
+    --spacing-medium: 1rem;
+    --spacing-large: 1.5rem;
+  }
+
+  body {
+    line-height: 1.25;
+  }
+}
+
+
+
 

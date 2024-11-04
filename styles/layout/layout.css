@@ -1,0 +1,21 @@
+header, main, footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+main {
+  justify-content: center;
+}
+
+header > nav > ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--spacing-large);
+}
+
+header > nav {
+  margin-left: auto;
+}
