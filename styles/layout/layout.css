@@ -24,7 +24,6 @@ header > nav {
   margin-left: auto;
   position: static;
   height: auto;
-  transform: none;
   background-color: transparent;
 }
 
@@ -40,7 +39,7 @@ header > nav {
   height: 25px;
 }
 
-img#close-icon {
+img.close-icon {
   display: none;
 }
 
@@ -63,7 +62,7 @@ img#close-icon {
     background-color: var(--background-color);
     z-index: 1;
     transform: translateX(100%);
-    transition: all 0.3s ease-in-out;
+    transition: transform 0.25s ease-in-out;
   }
 
   header > nav.active {
@@ -84,11 +83,11 @@ img#close-icon {
     font-size: 1.5rem;
   }
 
-  .menu-toggle.active #hamburger-icon {
+  .menu-toggle.active .hamburger-icon {
     display: none;
   }
 
-  .menu-toggle.active #close-icon {
+  .menu-toggle.active .close-icon {
     display: block;
   }
 }

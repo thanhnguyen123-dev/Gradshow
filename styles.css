@@ -10,3 +10,7 @@ section h2 {
   transform: translate(-50%, -50%);
   font-size: var(--h2-size);
 }
+
+main img {
+  opacity: 0.4;
+}
