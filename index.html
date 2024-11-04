@@ -7,41 +7,48 @@
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/layout/layout.css">
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <!--Header containing logo and navigatin bar-->
-  <header>
-    <h1><a href="index.html">GRADSHOW 2024</a></h1>
-    <!--Navigation links-->
-    <nav>
-      <ul>
-        <li><a href="pages/graduates.html">Graduates</a></li>
-        <li><a href="pages/about.html">About</a></li>
-        <li><a href="pages/support.html">Support</a></li>
-        <li><a href="pages/acknowledgement.html">Acknowledgement</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <!--Section to see all the graduates-->
-    <section>
-      <h2>Graduates</h2>
-      <!--Clik the image leads to the Graduates page-->
-      <a href="pages/graduates.html"><img src="img/ellie-ashwin-artwork.jpg" alt="Ellie Ashwin Background"></a>
-    </section>
-  </main>
-  <br>
-  <!--Footer contains extra information for the exhibition, along with extra links for support and study-->
-  <footer>
-    <p>ANU School of Art & Design Graduating Exhibition  |  02 - 10 December 2024  |  10am - 4pm Daily</p>
-    <p>
-      <a href="https://www.anu.edu.au/giving/support-us/transforming-our-world/the-school-of-art-design-opportunities-fund">
-        Support our students
-      </a>  
-      |  
-      <a href="https://soad.cass.anu.edu.au/study">Study at ANU School of Art & Design</a>
-    </p>
-    <p>Graphic by Le Thanh Nguyen</p>
-  </footer>
+  <section class="|">
+    <!--Header containing logo and navigatin bar-->
+    <header>
+      <h1><a href="index.html">GRADSHOW 2024</a></h1>
+      <!--Navigation links-->
+      <button class="menu-toggle" aria-label="Menu Toggle">
+        <img id="hamburger-icon" src="img/hamburger-menu-icon.svg" alt="This is a hamburger igon">
+        <img id="close-icon" src="img/close-icon.svg" alt="">
+      </button>
+      <nav>
+        <ul>
+          <li><a href="pages/graduates.html">Graduates</a></li>
+          <li><a href="pages/about.html">About</a></li>
+          <li><a href="pages/support.html">Support</a></li>
+          <li><a href="pages/acknowledgement.html">Acknowledgement</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!--Section to see all the graduates-->
+      <section>
+        <h2>Graduates</h2>
+        <!--Clik the image leads to the Graduates page-->
+        <a href="pages/graduates.html"><img src="img/ellie-ashwin-artwork.jpg" alt="Ellie Ashwin Background"></a>
+      </section>
+    </main>
+    <br>
+    <!--Footer contains extra information for the exhibition, along with extra links for support and study-->
+    <footer>
+      <p>ANU School of Art & Design Graduating Exhibition  |  02 - 10 December 2024  |  10am - 4pm Daily</p>
+      <p>
+        <a href="https://www.anu.edu.au/giving/support-us/transforming-our-world/the-school-of-art-design-opportunities-fund">
+          Support our students
+        </a>
+        |
+        <a href="https://soad.cass.anu.edu.au/study">Study at ANU School of Art & Design</a>
+      </p>
+      <p>Graphic by Le Thanh Nguyen</p>
+    </footer>
+  </section>
 </body>
 </html>
