@@ -14,3 +14,7 @@ nav a {
 h3, figure img{
   margin-bottom: 20px;
 }
+
+figure {
+  margin-bottom: 20px;
+}

@@ -20,6 +20,12 @@ header, main {
   width: 100%;
 }
 
+header > a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
 header {
   font-weight: bold;
   position: fixed;
@@ -136,8 +142,8 @@ img.close-icon {
   }
 
   header > nav {
-    opacity: 0;  /* Start hidden */
-    pointer-events: none;  /* Prevent interaction when hidden */
+    opacity: 0;  
+    pointer-events: none;  
     position: fixed;
     top: 0;
     right: 0;
@@ -168,10 +174,6 @@ img.close-icon {
     gap: var(--spacing-large);
   }
 
-  .gradshow-text {
-    font-size: var(--spacing-large);
-  }
-
   header > nav > ul > li > a {
     font-size: var(--spacing-medium);
     background-color: transparent !important;
@@ -191,6 +193,10 @@ img.close-icon {
 
   .menu-toggle.active .close-icon {
     display: block;
+  }
+
+  .entry-section {
+    margin-top: 80px;
   }
 
 }
