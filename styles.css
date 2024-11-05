@@ -11,6 +11,6 @@ section h2 {
   font-size: var(--h2-size);
 }
 
-main img {
+#entry-image {
   opacity: 0.4;
 }

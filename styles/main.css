@@ -7,11 +7,17 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'roboto';
+  src: url('../fonts/Roboto-Regular.ttf');
+}
+
 html, body {
   height: 100%;
   background-color: var(--background-color);
   line-height: 1.5;
   color: var(--text-color);
+  font-family: 'roboto', sans-serif;
 }
 
 html {
@@ -23,7 +29,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: var(--spacing-small);
+  padding: var(--spacing-medium) var(--spacing-large);
   max-width: 100%;
 }
 
@@ -45,7 +51,7 @@ img {
 
 /* CSS variables */
 :root {
-  --background-color: #F7F9E3;
+  --background-color: #ffffff;
   --text-color: #000000;
 
   --h1-size: 3rem;
