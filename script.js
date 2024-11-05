@@ -7,7 +7,7 @@ menuToggle.addEventListener('click', () => {
 });
 
 window.addEventListener('resize', () => {
-if (window.innerWidth > 600) {
+if (window.innerWidth > 768) {
     nav.classList.remove('active');
     menuToggle.classList.remove('active');
 }
