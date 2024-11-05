@@ -11,11 +11,12 @@ figure {
   aspect-ratio: 1.2/1;    
 }
 
-
 figure img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: 0.4;
+  transition: opacity 0.3s ease-out;
 }
 
 figure figcaption {
@@ -26,7 +27,17 @@ figure figcaption {
   text-align: center;
   color: black;
   font-weight: bold;
+  transition: color 0.3s ease-out;
 }
+
+figure:hover img {
+  opacity: 1;
+}
+
+figure:hover figcaption {
+  color: transparent;
+}
+
 
 @media screen and (max-width: 1024px) {
   section {
@@ -39,3 +50,5 @@ figure figcaption {
     grid-template-columns: 1fr;
   }
 }
+
+
