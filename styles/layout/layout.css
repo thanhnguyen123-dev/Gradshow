@@ -43,6 +43,11 @@ main {
   animation-fill-mode: forwards;
 }
 
+.gradshow-logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 /* Footer section */
 footer {
   margin-top: auto;
@@ -154,7 +159,7 @@ img.close-icon {
     height: 100vh;
     background-color: var(--background-color); 
     transform: translateX(100%); /* Right side transformation of the navigation bar */
-    transition: transform 0.25s ease-in-out; /* Transition for the navigation bar */
+    transition: all 0.25s ease-in-out; /* Transition for the navigation bar */
     display: flex;
     flex-direction: column;
     justify-content: center;

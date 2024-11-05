@@ -46,14 +46,14 @@ figure:hover figcaption {
 
 /* Media queries for mid-size devices */
 @media screen and (max-width: 1024px) {
-  section {
+  .graduates-section {
     grid-template-columns: repeat(3, 1fr); /* Make three columns when scrolling*/
   }
 }
 
 /* Media queries for mobile devices */
 @media screen and (max-width: 768px) {
-  section {
+  .graduates-section {
     grid-template-columns: 1fr; /* Make one collumn when scrolling*/
   }
 }
