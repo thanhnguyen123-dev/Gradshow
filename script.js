@@ -1,6 +1,5 @@
 const menuToggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('nav');
-const gradShowText = document.querySelector('.gradshow-text');
 
 /* Menu toggle */
 menuToggle.addEventListener('click', () => {
