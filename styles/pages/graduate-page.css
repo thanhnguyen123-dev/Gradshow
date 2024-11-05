@@ -1,21 +1,27 @@
 /* Navigation section to move between the graduates */
-nav {
+.change-graduates-nav {
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-nav a {
+.change-graduates-nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 10px;
 }
 
-h3, figure img{
+h3, figure img {
   margin-bottom: 20px;
 }
 
 figure {
   margin-bottom: 20px;
+}
+
+figcaption {
+  display: block;
 }

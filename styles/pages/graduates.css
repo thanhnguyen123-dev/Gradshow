@@ -1,5 +1,5 @@
 /* Graduates section */
-section {
+.graduates-section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);  /* Make four columns when scrolling */
   gap: 10px;                                      
@@ -32,6 +32,7 @@ figure figcaption {
   color: black;
   font-weight: bold;
   transition: color 0.3s ease-out; /* Transition for the color of the caption */
+  font-size: var(--p-size);
 }
 
 /* Hover effect */

@@ -1,12 +1,12 @@
 /* Main section */
-main > section {
+.entry-section {
   position: relative;
   text-align: center;
 }
 
 /* Graduate page entry image */
 /* Centering text over the entry image */
-section h2 {
+.entry-section .graduates-text {
   position: absolute;
   top: 50%;
   left: 50%;
