@@ -1,4 +1,4 @@
-/* CSS reset*/
+/* CSS reset */
 * {
   padding: 0;
   margin: 0;
@@ -7,6 +7,7 @@
   box-sizing: border-box;
 }
 
+/* Import Roboto font */
 @font-face {
   font-family: 'roboto';
   src: url('../fonts/Roboto-Regular.ttf');
@@ -21,8 +22,8 @@ html, body {
 }
 
 html {
-  scroll-behavior: smooth;
-  overflow-y: scroll;
+  scroll-behavior: smooth; /* Smooth scrolling */
+  overflow-y: scroll; /* Scrollbar always visible */
 }
 
 body {
@@ -90,6 +91,7 @@ h1, h2, h3, p {
   margin-bottom: var(--spacing-small);
 }
 
+/* Media queries for mobile devices */
 @media screen and (max-width: 768px) {
   :root {
     --h1-size: 2.5rem;

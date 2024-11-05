@@ -1,24 +1,28 @@
+/* Graduates section */
 section {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);  
+  grid-template-columns: repeat(4, 1fr);  /* Make four columns when scrolling */
   gap: 10px;                                      
   padding: var(--spacing-medium);
 }
 
+/* Figure section representing the artwork of the graduates */
 figure {
   position: relative;
   width: 100%;
-  aspect-ratio: 1.2/1;   
+  aspect-ratio: 1.2/1; /* Make consistent aspect ratio for the artwork */
 }
 
+/* Image of the artwork */
 figure img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   opacity: 0.4;
-  transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out; /* Transition for the opacity of the image */
 }
 
+/* Caption of the artwork */
 figure figcaption {
   position: absolute;
   top: 50%;
@@ -27,27 +31,29 @@ figure figcaption {
   text-align: center;
   color: black;
   font-weight: bold;
-  transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out; /* Transition for the color of the caption */
 }
 
+/* Hover effect */
 figure:hover img {
-  opacity: 1;
+  opacity: 1; /* Make the image full opacity when hovered */
 }
 
 figure:hover figcaption {
-  color: transparent;
+  color: transparent; /* Make the caption disappear when hovered */
 }
 
-
+/* Media queries for mid-size devices */
 @media screen and (max-width: 1024px) {
   section {
-    grid-template-columns: repeat(3, 1fr);  
+    grid-template-columns: repeat(3, 1fr); /* Make three columns when scrolling*/
   }
 }
 
+/* Media queries for mobile devices */
 @media screen and (max-width: 768px) {
   section {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Make one collumn when scrolling*/
   }
 }
 

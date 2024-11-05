@@ -1,8 +1,11 @@
+/* Main section */
 main > section {
   position: relative;
   text-align: center;
 }
 
+/* Graduate page entry image */
+/* Centering text over the entry image */
 section h2 {
   position: absolute;
   top: 50%;
@@ -11,6 +14,7 @@ section h2 {
   font-size: var(--h2-size);
 }
 
+/* Entry image */
 #entry-image {
   width: 90%;
   height: auto;
